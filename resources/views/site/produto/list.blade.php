@@ -16,7 +16,7 @@
                     <tr>
                         <td>{{$produto->id}}</a></td>
                         <td>{{$produto->name}}</td>
-                        <td>{{$produto->categoria_id}}</td>
+                        <td>{{$produto->categoria->name}}</td>
                         <td>{{$produto->validade}}</td>
                         <td>{{$produto->price}}</td>
                         <td>

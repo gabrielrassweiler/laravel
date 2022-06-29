@@ -14,9 +14,9 @@
                 @foreach ($vendas as $venda)
                     <tr>
                         <td>{{$venda->id}}</a></td>
-                        <td>{{$venda->produto_id}}</td>
-                        <td>{{$venda->produto_id}}</td>
-                        <td>{{$venda->produto_id}}</td>
+                        <td>{{$venda->produto->categoria->name}}</td>
+                        <td>{{$venda->produto->name}}</td>
+                        <td>{{$venda->produto->price}}</td>
 
                         <td>
                             <a class="btn btn-danger" href="{{route('venda.delete', $venda->id)}}" role="button">Deletar</a>
